@@ -49,6 +49,7 @@ a {
   font-size: 1.8rem;
   cursor: pointer;
   color: #fff;
+  transition: background 0.3s ease-in-out;
 }
 
 .btn--hero {
@@ -121,21 +122,70 @@ a {
 /* Locations Section */
 
 .locations {
+  position: relative;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("../images/new-york-page.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .locations__heading {
   padding: 1rem 0rem;
   text-decoration: underline;
   text-decoration-thickness: 0.5rem;
- 
 }
 
 .locations__subheading {
   padding: 4rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: cloudAnimation 3s ease-in-out;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 3s;
+}
+
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+
+  .locations__subheading {
+    background: rgba(19, 28, 39, 0.9);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
 }
