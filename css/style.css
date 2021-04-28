@@ -1,0 +1,141 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: calc(4.8rem + 1vw);
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Button */
+.btn {
+  padding: 2rem 6rem;
+  border: 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn--hero {
+  background: #4c6e97;
+}
+
+.btn--hero:hover {
+  background: #3e5c81;
+}
+
+/* Nav section and Hero */
+
+.main-head {
+  background: #131c27;
+  color: #fff;
+}
+
+.nav {
+  min-height: 10vh;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya";
+  font-weight: 400;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../images/landing-page.jpg") center/cover no-repeat;
+  min-height: 90vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__subheading {
+  margin: 4vw;
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+}
+
+/* Locations Section */
+
+.locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../images/new-york-page.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locations__heading {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+ 
+}
+
+.locations__subheading {
+  padding: 4rem 0rem;
+}
