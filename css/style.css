@@ -277,3 +277,42 @@ a {
 .form-wrapper input {
   padding: 1rem 3rem;
 }
+
+@media screen and (max-width: 932px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
+
+/* Footer Section */
+.footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+  padding: 2rem;
+}
+
+.footer__heading {
+  flex: 1 1 40rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.footer .list {
+  flex: 1 1 40rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 932px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer__heading {
+    margin-bottom: 2rem;
+  }
+}
