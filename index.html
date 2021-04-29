@@ -19,7 +19,7 @@
         <ul class="list">
           <li class="link"><a href="#locations">Locations</a></li>
           <li class="link"><a href="#benefits">Benefits</a></li>
-          <li class="link"><a href="#contacts">Contact</a></li>
+          <li class="link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -40,9 +40,61 @@
           We cover everything from picking the perfect hotel, <br />
           flight and travelling destination.
         </h3>
-        <img class="moving-cloud-1 cloud" src="/images/cloud.png" alt="">
-        <img class="moving-cloud-2 cloud" src="/images/cloud.png" alt="">
+        <img class="moving-cloud-1 cloud" src="/images/cloud.png" alt="" />
+        <img class="moving-cloud-2 cloud" src="/images/cloud.png" alt="" />
       </header>
+    </section>
+    <section class="benefits">
+      <header class="benefits-head container">
+        <h2 class="benefits__heading">The Perfect Travel</h2>
+        <h3 class="benefits__subheading">
+          We cover everything from picking the perfect hotel, <br />
+          flight and travelling destination.
+        </h3>
+      </header>
+      <div class="cards">
+        <div class="card">
+          <div class="card__image">
+            <img src="/images/icons/route-solid.svg" alt="" />
+          </div>
+          <h4 class="card__title">Travel</h4>
+          <p class="card__descr">
+            Travel in over 250 countries with no effort.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="/images/icons/bed-solid.svg" alt="" />
+          </div>
+          <h4 class="card__title">Hotel</h4>
+          <p class="card__descr">Hotels located near popular areas.</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="/images/icons/plane-departure-solid.svg" alt="" />
+          </div>
+          <h4 class="card__title">Fly</h4>
+          <p class="card__descr">Flight included in every purchased trip.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h2>Contact Us</h2>
+        </header>
+        <form>
+          <div class="name-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="email-form">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required />
+          </div>
+          <button class="btn btn--hero" type="submit">Submit</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
